@@ -7,7 +7,7 @@ import Section from "../layout/Section";
 
 export default function ContactSection() {
   return (
-    <Section className="bg-blue-400 py-10">
+    <Section className="-mt-44 bg-blue-400 pb-10 pt-52">
       <Container>
         <div className="flex flex-row gap-8">
           <div className="basis-2/3 border-r pr-8 text-white">
