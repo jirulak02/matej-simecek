@@ -4,17 +4,19 @@ import EmailIcon from "@mui/icons-material/Email";
 import ContactForm from "../ContactForm";
 import Container from "../layout/Container";
 import Section from "../layout/Section";
+import Gradient from "../ui/Gradient";
 
 export default function ContactSection() {
   return (
-    <Section className="-mt-44 bg-blue-400 pb-10 pt-52">
-      <Container>
+    <Section className="relative -mt-44 pb-12 pt-52">
+      <Gradient className="z-0" />
+      <Container className="relative z-10">
         <div className="flex flex-row gap-8">
           <div className="basis-2/3 border-r pr-8 text-white">
-            <h2>MÁM ZÁJEM O KONZULTACI</h2>
+            <h2 className="mb-6">MÁM ZÁJEM O KONZULTACI</h2>
             <ContactForm />
           </div>
-          <div className="flex basis-1/3 flex-col gap-2 text-white">
+          <div className="flex basis-1/3 flex-col justify-center gap-2 text-white">
             <div>
               <PhoneEnabledIcon />
               <span className="ml-6">+420 773 697 212</span>

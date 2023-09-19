@@ -10,8 +10,8 @@ export default function Footer() {
   return (
     <footer>
       <Container>
-        <div>
-          <Image src="/1.jpg" width={30} height={30} alt="" className="mx-auto" />
+        <div className="my-8">
+          <Image src="/fairlife-logo.png" width={300} height={180} alt="" className="mx-auto" />
         </div>
         <p className="text-center text-xs">
           Investiční produkty zprostředkovávám jako vázaný zástupce zapsaný v registru ČNB pod IČO:
@@ -22,16 +22,22 @@ export default function Footer() {
           registru ČNB pod IČO: 1067420 a zároveň registrovaný pod samostatným zprostředkovatelem
           spotřebitelských úvěrů Broker Trust, a.s. IČO: 26439719
         </p>
-        <div className="flex flex-row items-center gap-3">
-          <Link href="/">o FairLife</Link>
-          <Link href="/">ochrana osobních údajů</Link>
-          <Link href="/">cookies</Link>
-          <hr className="mt-auto w-full border-t-2 pb-4" />
-          <Link href="/">
+        <div className="my-8 flex flex-row items-center gap-8 text-base">
+          <Link href="/" className="whitespace-nowrap">
+            o FairLife
+          </Link>
+          <Link href="/" className="whitespace-nowrap">
+            ochrana osobních údajů
+          </Link>
+          <Link href="/" className="whitespace-nowrap">
+            cookies
+          </Link>
+          <hr className="mt-auto w-full border-t-2 pb-3" />
+          <Link href="/" className="whitespace-nowrap">
             <LinkedInIcon />
           </Link>
         </div>
-        <p>FairLife © 2023. Všechna práva vyhrazena.</p>
+        <p className="pb-8 text-center text-sm">FairLife © 2023. Všechna práva vyhrazena.</p>
       </Container>
     </footer>
   );

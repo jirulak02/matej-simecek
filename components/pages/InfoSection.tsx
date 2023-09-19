@@ -4,10 +4,12 @@ import Section from "../layout/Section";
 
 export default function InfoSection() {
   return (
-    <Section className="py-10">
+    <Section className="py-12">
       <Container>
-        <div className="flex flex-row gap-6">
-          <Image src="" className="basis-2/5" alt="" />
+        <div className="flex flex-row gap-12">
+          <div className="relative basis-2/5">
+            <Image src="/about.png" fill quality={100} className="object-cover" alt="" />
+          </div>
           <div className="basis-3/5 space-y-3">
             <h2>O mně</h2>
             <hr className="w-20 border-t-2" />
@@ -27,13 +29,15 @@ export default function InfoSection() {
             </p>
           </div>
         </div>
-        <div className="mt-8 flex flex-row gap-6">
+        <div className="mt-8 flex flex-row gap-12">
           <div className="basis-3/5 space-y-3">
             <h2>Jak pracuji</h2>
             <hr className="w-20 border-t-2" />
             <p>TODO</p>
           </div>
-          <Image src="" className="basis-2/5" alt="" />
+          <div className="relative basis-2/5">
+            <Image src="/work.png" fill quality={100} className="object-cover" alt="" />
+          </div>
         </div>
       </Container>
     </Section>

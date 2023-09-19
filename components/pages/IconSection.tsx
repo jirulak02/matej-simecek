@@ -12,9 +12,9 @@ import { StyledButton } from "../ui/Styles";
 
 export default function IconSection() {
   return (
-    <Section>
+    <Section className="relative z-50 -mt-32 py-12">
       <Container>
-        <Card className="relative z-50 -mt-32">
+        <Card className="">
           <div className="flex flex-row flex-wrap justify-around">
             <div className="flex flex-col items-center justify-center space-y-3 p-5">
               <TrendingUpIcon fontSize="large" />

@@ -17,4 +17,13 @@ export const StyledInput = styled(TextField)({
   "& .MuiInputBase-root": {
     borderRadius: 0,
   },
+  "& .MuiInputLabel-root": {
+    color: "white",
+  },
+  "& .MuiInputLabel-root.Mui-focused": {
+    color: "white",
+  },
+  "& .MuiOutlinedInput-notchedOutline": {
+    borderColor: "transparent",
+  },
 });

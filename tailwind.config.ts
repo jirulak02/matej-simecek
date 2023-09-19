@@ -10,6 +10,8 @@ const config: Config = {
     extend: {
       colors: {
         white: "rgb(245, 245, 245)",
+        "primary-light": "#00A1C1",
+        "primary-dark": "#0A2D4D",
       },
     },
   },
