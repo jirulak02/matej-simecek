@@ -3,6 +3,7 @@
 import { Form, useForm } from "react-hook-form";
 import { toast, Toaster } from "react-hot-toast";
 import { StyledButton, StyledInput } from "./ui/Styles";
+import { error } from "console";
 
 export type ContactFormData = {
   firstName: string;
@@ -38,11 +39,8 @@ export default function ContactForm({ className }: { className?: string }) {
             label="Jméno"
             autoComplete="given-name"
             {...register("firstName", { required: true })}
-            aria-invalid={errors.firstName ? "true" : "false"}
+            error={errors.firstName && true}
           />
-          {/* {errors.firstName?.type === "required" && (
-          <p className="text-sm text-red-500">This field is required!</p>
-        )} */}
         </div>
         <div className={`flex flex-col ${!errors.lastName && ""}`}>
           <StyledInput
@@ -50,11 +48,8 @@ export default function ContactForm({ className }: { className?: string }) {
             label="Příjmení"
             autoComplete="family-name"
             {...register("lastName", { required: true })}
-            aria-invalid={errors.lastName ? "true" : "false"}
+            error={errors.lastName && true}
           />
-          {/* {errors.lastName?.type === "required" && (
-          <p className="text-sm text-red-500">This field is required!</p>
-        )} */}
         </div>
       </div>
       <div className={`flex flex-col ${!errors.email && ""}`}>
@@ -63,14 +58,8 @@ export default function ContactForm({ className }: { className?: string }) {
           label="E-mail"
           autoComplete="email"
           {...register("email", { required: true, pattern: /^.+@.+\..+$/i })}
-          aria-invalid={errors.email ? "true" : "false"}
+          error={errors.email && true}
         />
-        {/* {errors.email?.type === "required" && (
-          <p className="text-sm text-red-500">This field is required!</p>
-        )}
-        {errors.email?.type === "pattern" && (
-          <p className="text-sm text-red-500">Provide a valid email format!</p>
-        )} */}
       </div>
       <div className={`flex flex-col ${!errors.message && ""}`}>
         <StyledInput
@@ -78,14 +67,16 @@ export default function ContactForm({ className }: { className?: string }) {
           rows={4}
           label="Vaše zpráva"
           {...register("message", { required: true })}
-          aria-invalid={errors.message ? "true" : "false"}
+          error={errors.message && true}
         />
-        {/* {errors.message?.type === "required" && (
-          <p className="text-sm text-red-500">This field is required!</p>
-        )} */}
       </div>
       <div className="flex justify-center">
-        <StyledButton type="submit" variant="outlined" {...(isSubmitting && { disabled: true })}>
+        <StyledButton
+          type="submit"
+          variant="contained"
+          className="text-primary-dark bg-white shadow-none transition-transform duration-200 ease-in-out hover:scale-105 hover:bg-neutral-200 hover:shadow-none focus:shadow-none disabled:cursor-not-allowed disabled:bg-gray-300"
+          {...(isSubmitting && { disabled: true })}
+        >
           {isSubmitting ? "Odesíláno" : "Odeslat"}
         </StyledButton>
       </div>
@@ -94,12 +85,12 @@ export default function ContactForm({ className }: { className?: string }) {
           success: {
             duration: 3000,
             position: "bottom-center",
-            className: "text-lg font-semibold h-16 w-80 border-2 border-lime-800",
+            className: "text-lg font-medium border-2 border-green-500",
           },
           error: {
             duration: 3000,
             position: "bottom-center",
-            className: "text-lg font-semibold h-16 w-80 border-2 border-red-500",
+            className: "text-lg font-medium border-2 border-red-500",
           },
         }}
       />

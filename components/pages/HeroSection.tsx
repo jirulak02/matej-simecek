@@ -5,7 +5,7 @@ import Gradient from "../ui/Gradient";
 
 export default function HeroSection() {
   return (
-    <Section className="relative h-[500px] overflow-hidden">
+    <Section className="relative h-[560px] overflow-hidden">
       <Gradient className="z-10 opacity-80" />
       <Image
         src="/hero.jpeg"
@@ -13,7 +13,7 @@ export default function HeroSection() {
         quality={100}
         priority
         className="z-0 select-none object-cover"
-        alt=""
+        alt="Flora office building in Prague"
       />
       <Container className="relative z-40 h-full">
         <div className="flex h-full flex-row gap-10">
@@ -31,7 +31,7 @@ export default function HeroSection() {
               quality={100}
               priority
               className="object-contain object-right pt-8"
-              alt=""
+              alt="Matěj Šimeček in a beatiful blue suit"
             />
           </div>
         </div>
