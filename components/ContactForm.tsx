@@ -32,7 +32,7 @@ export default function ContactForm({ className }: { className?: string }) {
       className={`flex w-full flex-col gap-4 ${className}`}
     >
       <div className="grid grid-cols-2 gap-4">
-        <div className={`flex flex-col ${!errors.firstName && ""}`}>
+        <div className={`flex flex-col`}>
           <StyledInput
             type="text"
             label="Jméno"
@@ -41,7 +41,7 @@ export default function ContactForm({ className }: { className?: string }) {
             error={errors.firstName && true}
           />
         </div>
-        <div className={`flex flex-col ${!errors.lastName && ""}`}>
+        <div className={`flex flex-col`}>
           <StyledInput
             type="text"
             label="Příjmení"
@@ -51,7 +51,7 @@ export default function ContactForm({ className }: { className?: string }) {
           />
         </div>
       </div>
-      <div className={`flex flex-col ${!errors.email && ""}`}>
+      <div className={`flex flex-col`}>
         <StyledInput
           type="text"
           label="E-mail"
@@ -60,10 +60,11 @@ export default function ContactForm({ className }: { className?: string }) {
           error={errors.email && true}
         />
       </div>
-      <div className={`flex flex-col ${!errors.message && ""}`}>
+      <div className={`flex flex-col`}>
         <StyledInput
           multiline
           rows={4}
+          minRows={4}
           label="Vaše zpráva"
           {...register("message", { required: true })}
           error={errors.message && true}

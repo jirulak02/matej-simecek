@@ -14,8 +14,8 @@ export default function Footer() {
           <Image
             src="/fairlife-logo.png"
             width={300}
-            height={180}
-            alt="FairLife logo"
+            height={110}
+            alt="Fair Life logo"
             className="mx-auto"
           />
         </div>
@@ -30,7 +30,7 @@ export default function Footer() {
         </p>
         <div className="my-8 flex flex-row items-center gap-8 text-base">
           <Link href="http://www.fair-life.cz/" target="_blank" className="whitespace-nowrap">
-            o FairLife
+            o Fair Life
           </Link>
           <Link href="/" className="whitespace-nowrap">
             ochrana osobních údajů
@@ -43,10 +43,10 @@ export default function Footer() {
             href="https://www.linkedin.com/in/mat%C4%9Bj-%C5%A1ime%C4%8Dek-71aba6215"
             target="_blank"
           >
-            <LinkedInIcon />
+            <LinkedInIcon style={{ color: "rgb(var(--primary-dark))" }} />
           </Link>
         </div>
-        <p className="pb-8 text-center text-sm">FairLife © 2023. Všechna práva vyhrazena.</p>
+        <p className="pb-8 text-center text-sm">Fair Life © 2023. Všechna práva vyhrazena.</p>
       </Container>
     </footer>
   );

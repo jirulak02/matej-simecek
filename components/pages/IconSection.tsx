@@ -17,25 +17,32 @@ export default function IconSection() {
           <div className="flex flex-row flex-wrap justify-around">
             <div className="flex flex-col items-center justify-center space-y-4 px-4 py-8">
               <TrendingUpIcon
-                className=""
-                style={{ width: "4rem", height: "4rem", color: "rgb(10 45 77)" }}
+                style={{ width: "4rem", height: "4rem", color: "rgb(var(--primary-dark))" }}
               />
               <h3>investice</h3>
             </div>
             <div className="flex flex-col items-center justify-center space-y-4 px-4 py-8">
-              <HomeOutlinedIcon className="text-primary-dark h-16 w-16" />
+              <HomeOutlinedIcon
+                style={{ width: "4rem", height: "4rem", color: "rgb(var(--primary-dark))" }}
+              />
               <h3>hypotéky</h3>
             </div>
             <div className="flex flex-col items-center justify-center space-y-4 px-4 py-8">
-              <HealthAndSafetyOutlinedIcon className="text-primary-dark h-16 w-16" />
+              <HealthAndSafetyOutlinedIcon
+                style={{ width: "4rem", height: "4rem", color: "rgb(var(--primary-dark))" }}
+              />
               <h3>pojištění</h3>
             </div>
             <div className="flex flex-col items-center justify-center space-y-4 px-4 py-8">
-              <PaidOutlinedIcon className="text-primary-dark h-16 w-16" />
+              <PaidOutlinedIcon
+                style={{ width: "4rem", height: "4rem", color: "rgb(var(--primary-dark))" }}
+              />
               <h3>úvěry</h3>
             </div>
             <div className="flex flex-col items-center justify-center space-y-4 px-4 py-8">
-              <MergeIcon className="text-primary-dark h-16 w-16" />
+              <MergeIcon
+                style={{ width: "4rem", height: "4rem", color: "rgb(var(--primary-dark))" }}
+              />
               <h3>konsolidace</h3>
             </div>
           </div>

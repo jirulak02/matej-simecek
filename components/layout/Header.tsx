@@ -11,7 +11,7 @@ export default function Header() {
     <header>
       <Container className="flex h-20 flex-row items-center gap-3">
         <Link href="/" className="flex min-w-fit flex-row items-center gap-3">
-          <Image src="/fairlife-head.png" width={30} height={30} alt="FairLife lion head logo" />
+          <Image src="/fairlife-head.png" width={30} height={30} alt="Fair Life lion head logo" />
           <div className="whitespace-nowrap">
             Matěj <span className="text-primary-light font-bold">ŠIMEČEK</span>
           </div>
@@ -22,7 +22,7 @@ export default function Header() {
             href="https://www.linkedin.com/in/mat%C4%9Bj-%C5%A1ime%C4%8Dek-71aba6215"
             target="_blank"
           >
-            <LinkedInIcon />
+            <LinkedInIcon style={{ color: "rgb(var(--primary-dark))" }} />
           </Link>
         </div>
       </Container>

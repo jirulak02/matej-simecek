@@ -3,8 +3,6 @@ import Container from "../layout/Container";
 import Section from "../layout/Section";
 import Card from "../ui/Card";
 
-import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
-
 export default function ReferenceSection() {
   return (
     <Section className="relative z-10 py-12">

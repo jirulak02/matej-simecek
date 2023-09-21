@@ -5,6 +5,10 @@
 :root {
   --foreground-rgb: 82, 82, 82;
   --background-rgb: 245, 245, 245;
+  --primary-dark: 10, 45, 77;
+  --primary-light: 0, 161, 193;
+  --white: 245, 245, 245;
+  --black: 38, 38, 38;
 }
 
 html {
@@ -17,19 +21,19 @@ body {
 }
 
 h1 {
-  @apply text-5xl md:text-6xl lg:text-7xl;
+  @apply text-5xl text-black md:text-6xl lg:text-7xl;
 }
 h2 {
-  @apply text-2xl md:text-3xl lg:text-4xl;
+  @apply text-2xl text-black md:text-3xl lg:text-4xl;
 }
 h3 {
-  @apply text-lg md:text-xl lg:text-2xl;
+  @apply text-lg text-black md:text-xl lg:text-2xl;
 }
 h4 {
-  @apply text-base md:text-lg lg:text-xl;
+  @apply text-base text-black md:text-lg lg:text-xl;
 }
 h5 {
-  @apply text-sm md:text-base lg:text-lg;
+  @apply text-sm text-black md:text-base lg:text-lg;
 }
 p,
 a,
