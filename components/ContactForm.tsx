@@ -2,8 +2,7 @@
 
 import { Form, useForm } from "react-hook-form";
 import { toast, Toaster } from "react-hot-toast";
-import { StyledButton, StyledInput } from "./ui/Styles";
-import { error } from "console";
+import { StyledButtonSecondary, StyledInput } from "./ui/Styles";
 
 export type ContactFormData = {
   firstName: string;
@@ -71,14 +70,13 @@ export default function ContactForm({ className }: { className?: string }) {
         />
       </div>
       <div className="flex justify-center">
-        <StyledButton
+        <StyledButtonSecondary
           type="submit"
           variant="contained"
-          className="text-primary-dark bg-white shadow-none transition-transform duration-200 ease-in-out hover:scale-105 hover:bg-neutral-200 hover:shadow-none focus:shadow-none disabled:cursor-not-allowed disabled:bg-gray-300"
           {...(isSubmitting && { disabled: true })}
         >
           {isSubmitting ? "Odesíláno" : "Odeslat"}
-        </StyledButton>
+        </StyledButtonSecondary>
       </div>
       <Toaster
         toastOptions={{

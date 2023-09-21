@@ -7,7 +7,7 @@ import MergeIcon from "@mui/icons-material/Merge";
 import Container from "../layout/Container";
 import Section from "../layout/Section";
 import Card from "../ui/Card";
-import { StyledButton } from "../ui/Styles";
+import { StyledButtonPrimary } from "../ui/Styles";
 
 export default function IconSection() {
   return (
@@ -16,7 +16,10 @@ export default function IconSection() {
         <Card>
           <div className="flex flex-row flex-wrap justify-around">
             <div className="flex flex-col items-center justify-center space-y-4 px-4 py-8">
-              <TrendingUpIcon className="text-primary-dark h-16 w-16" />
+              <TrendingUpIcon
+                className=""
+                style={{ width: "4rem", height: "4rem", color: "rgb(10 45 77)" }}
+              />
               <h3>investice</h3>
             </div>
             <div className="flex flex-col items-center justify-center space-y-4 px-4 py-8">
@@ -37,13 +40,9 @@ export default function IconSection() {
             </div>
           </div>
           <div className="flex justify-center">
-            <StyledButton
-              href="#contact"
-              variant="contained"
-              className="bg-primary-light hover:bg-primary-dark shadow-none transition-transform duration-200 ease-in-out hover:scale-105 hover:shadow-none focus:shadow-none"
-            >
+            <StyledButtonPrimary href="#contact" variant="contained">
               MÁM ZÁJEM O SPOLUPRÁCI
-            </StyledButton>
+            </StyledButtonPrimary>
           </div>
         </Card>
       </Container>
