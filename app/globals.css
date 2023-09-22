@@ -3,23 +3,41 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 38, 38, 38;
+  --foreground-rgb: 82, 82, 82;
   --background-rgb: 245, 245, 245;
+  --primary-dark: 10, 45, 77;
+  --primary-light: 0, 161, 193;
+  --white: 245, 245, 245;
+  --black: 38, 38, 38;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
 }
 
-/* h1 {
-  @apply
-} */
+h1 {
+  @apply text-5xl text-black md:text-6xl lg:text-7xl;
+}
+h2 {
+  @apply text-2xl text-black md:text-3xl lg:text-4xl;
+}
+h3 {
+  @apply text-lg text-black md:text-xl lg:text-2xl;
+}
+h4 {
+  @apply text-base text-black md:text-lg lg:text-xl;
+}
+h5 {
+  @apply text-sm text-black md:text-base lg:text-lg;
+}
+p,
+a,
+li,
+span {
+  @apply text-sm md:text-base;
+}

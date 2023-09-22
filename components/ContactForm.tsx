@@ -2,7 +2,8 @@
 
 import { Form, useForm } from "react-hook-form";
 import { toast, Toaster } from "react-hot-toast";
-import { StyledButton, StyledInput } from "./ui/Styles";
+
+import { StyledButtonSecondary, StyledInput } from "./ui/Styles";
 
 export type ContactFormData = {
   firstName: string;
@@ -32,74 +33,63 @@ export default function ContactForm({ className }: { className?: string }) {
       className={`flex w-full flex-col gap-4 ${className}`}
     >
       <div className="grid grid-cols-2 gap-4">
-        <div className={`flex flex-col ${!errors.firstName && ""}`}>
+        <div className={`flex flex-col`}>
           <StyledInput
             type="text"
             label="Jméno"
             autoComplete="given-name"
             {...register("firstName", { required: true })}
-            aria-invalid={errors.firstName ? "true" : "false"}
+            error={errors.firstName && true}
           />
-          {/* {errors.firstName?.type === "required" && (
-          <p className="text-sm text-red-500">This field is required!</p>
-        )} */}
         </div>
-        <div className={`flex flex-col ${!errors.lastName && ""}`}>
+        <div className={`flex flex-col`}>
           <StyledInput
             type="text"
             label="Příjmení"
             autoComplete="family-name"
             {...register("lastName", { required: true })}
-            aria-invalid={errors.lastName ? "true" : "false"}
+            error={errors.lastName && true}
           />
-          {/* {errors.lastName?.type === "required" && (
-          <p className="text-sm text-red-500">This field is required!</p>
-        )} */}
         </div>
       </div>
-      <div className={`flex flex-col ${!errors.email && ""}`}>
+      <div className={`flex flex-col`}>
         <StyledInput
           type="text"
           label="E-mail"
           autoComplete="email"
           {...register("email", { required: true, pattern: /^.+@.+\..+$/i })}
-          aria-invalid={errors.email ? "true" : "false"}
+          error={errors.email && true}
         />
-        {/* {errors.email?.type === "required" && (
-          <p className="text-sm text-red-500">This field is required!</p>
-        )}
-        {errors.email?.type === "pattern" && (
-          <p className="text-sm text-red-500">Provide a valid email format!</p>
-        )} */}
       </div>
-      <div className={`flex flex-col ${!errors.message && ""}`}>
+      <div className={`flex flex-col`}>
         <StyledInput
           multiline
           rows={4}
           label="Vaše zpráva"
           {...register("message", { required: true })}
-          aria-invalid={errors.message ? "true" : "false"}
+          error={errors.message && true}
         />
-        {/* {errors.message?.type === "required" && (
-          <p className="text-sm text-red-500">This field is required!</p>
-        )} */}
       </div>
       <div className="flex justify-center">
-        <StyledButton type="submit" variant="outlined" {...(isSubmitting && { disabled: true })}>
+        <StyledButtonSecondary
+          type="submit"
+          variant="contained"
+          {...(isSubmitting && { disabled: true })}
+        >
           {isSubmitting ? "Odesíláno" : "Odeslat"}
-        </StyledButton>
+        </StyledButtonSecondary>
       </div>
       <Toaster
         toastOptions={{
           success: {
             duration: 3000,
             position: "bottom-center",
-            className: "text-lg font-semibold h-16 w-80 border-2 border-lime-800",
+            className: "text-lg font-medium border-2 border-green-500",
           },
           error: {
             duration: 3000,
             position: "bottom-center",
-            className: "text-lg font-semibold h-16 w-80 border-2 border-red-500",
+            className: "text-lg font-medium border-2 border-red-500",
           },
         }}
       />

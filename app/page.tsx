@@ -1,20 +1,24 @@
+import { Metadata } from "next";
+
 import ContactSection from "@/components/pages/ContactSection";
 import HeroSection from "@/components/pages/HeroSection";
-import IconSection from "@/components/pages/IconSection";
+import ServicesSection from "@/components/pages/ServicesSection";
 import InfoSection from "@/components/pages/InfoSection";
+import ReferenceSection from "@/components/pages/ReferenceSection";
+
+export const metadata: Metadata = {
+  title: "Matěj Šimeček - Váš finanční specialista | Fair Life",
+  description: "Specialista na investice a správu majetku",
+};
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center">
-      <div className="flex h-screen w-screen flex-col items-center justify-center bg-black">
-        <h1 className="text-4xl text-white">Tato stránka se aktuálně připravuje!</h1>
-        <h2 className="text-2xl text-white">Vraťte se v druhé půlce září, díky.</h2>
-      </div>
-
-      {/* <HeroSection />
-      <IconSection />
+      <HeroSection />
+      <ServicesSection />
       <InfoSection />
-      <ContactSection /> */}
+      <ReferenceSection />
+      <ContactSection />
     </main>
   );
 }
