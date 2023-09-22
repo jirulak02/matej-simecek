@@ -1,6 +1,6 @@
 export default function Section({
   children,
-  className,
+  className = "",
   id,
 }: {
   children: React.ReactNode;

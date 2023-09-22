@@ -2,6 +2,7 @@
 
 import { Form, useForm } from "react-hook-form";
 import { toast, Toaster } from "react-hot-toast";
+
 import { StyledButtonSecondary, StyledInput } from "./ui/Styles";
 
 export type ContactFormData = {
@@ -64,7 +65,6 @@ export default function ContactForm({ className }: { className?: string }) {
         <StyledInput
           multiline
           rows={4}
-          minRows={4}
           label="Vaše zpráva"
           {...register("message", { required: true })}
           error={errors.message && true}

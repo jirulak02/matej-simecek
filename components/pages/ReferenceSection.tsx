@@ -1,22 +1,23 @@
 import Image from "next/image";
+
 import Container from "../layout/Container";
 import Section from "../layout/Section";
 import Card from "../ui/Card";
 
 export default function ReferenceSection() {
   return (
-    <Section className="relative z-10 py-12">
+    <Section className="relative z-10 py-8 md:py-12">
       <Container>
         <h2 className="text-primary-dark text-center font-semibold">Reference</h2>
-        <div className="mt-6 flex flex-row gap-12">
+        <div className="mt-6 flex flex-col gap-8 lg:flex-row lg:gap-12">
           <Card className="flex flex-row gap-4 p-6">
             <div className="basis-1/4">
               <Image
-                src="/karnik.jpeg"
+                src="/karnik.png"
                 quality={100}
                 className="rounded-sm"
-                width={400}
-                height={400}
+                width={200}
+                height={200}
                 alt="Jan Kárník in a shirt with see behind him"
               />
             </div>
@@ -42,11 +43,11 @@ export default function ReferenceSection() {
           <Card className="flex flex-row gap-4 p-6">
             <div className="basis-1/4">
               <Image
-                src="/avatar.jpeg"
+                src="/avatar.png"
                 quality={100}
                 className="rounded-sm"
-                width={400}
-                height={400}
+                width={200}
+                height={200}
                 alt="Profile avatar placeholder"
               />
             </div>

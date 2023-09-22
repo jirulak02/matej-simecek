@@ -8,11 +8,11 @@ import Gradient from "../ui/Gradient";
 
 export default function ContactSection() {
   return (
-    <Section className="relative -mt-44 pb-12 pt-52" id="contact">
+    <Section className="relative -mt-32 pb-8 pt-36 md:-mt-44 md:pb-12 md:pt-52" id="contact">
       <Gradient className="z-0" />
       <Container className="relative z-10">
-        <div className="flex flex-row gap-8">
-          <div className="basis-2/3 border-r border-white pr-8 text-white">
+        <div className="flex flex-col gap-8 md:flex-row">
+          <div className="basis-2/3 text-white md:border-r md:border-white md:pr-8">
             <h2 className="mb-6 text-white">MÁM ZÁJEM O KONZULTACI</h2>
             <ContactForm />
           </div>

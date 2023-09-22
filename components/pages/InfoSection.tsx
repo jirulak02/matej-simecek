@@ -1,13 +1,14 @@
 import Image from "next/image";
+
 import Container from "../layout/Container";
 import Section from "../layout/Section";
 
 export default function InfoSection() {
   return (
-    <Section className="py-12">
+    <Section className="py-8 md:py-12">
       <Container>
-        <div className="flex flex-row gap-12">
-          <div className="relative basis-2/5">
+        <div className="flex flex-col gap-6 lg:flex-row lg:gap-12">
+          <div className="relative min-h-[200px] basis-2/5">
             <Image
               src="/about.png"
               fill
@@ -35,7 +36,16 @@ export default function InfoSection() {
             </p>
           </div>
         </div>
-        <div className="mt-16 flex flex-row gap-12">
+        <div className="mt-12 flex flex-col gap-6 lg:mt-16 lg:flex-row lg:gap-12">
+          <div className="relative min-h-[200px] basis-2/5 md:order-last">
+            <Image
+              src="/work.png"
+              fill
+              quality={100}
+              className="rounded-sm object-cover shadow-md"
+              alt="Mr. Šimeček in a suit talking to a client on the phone"
+            />
+          </div>
           <div className="basis-3/5 space-y-4">
             <h2 className="text-primary-dark font-semibold">Jak pracuji</h2>
             <hr className="w-40 border-t-2" />
@@ -49,15 +59,6 @@ export default function InfoSection() {
               polopatě vysvětlím. Jen tak mi mohou klienti naplno důvěřovat a být nadšení z naší
               celoživotní spolupráce.
             </p>
-          </div>
-          <div className="relative basis-2/5">
-            <Image
-              src="/work.png"
-              fill
-              quality={100}
-              className="rounded-sm object-cover shadow-md"
-              alt="Mr. Šimeček in a suit talking to a client on the phone"
-            />
           </div>
         </div>
       </Container>

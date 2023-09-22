@@ -10,13 +10,14 @@ export default function Footer() {
   return (
     <footer>
       <Container>
-        <div className="my-8">
+        <div className="my-6 md:my-8">
           <Image
-            src="/fairlife-logo.png"
+            src="/logos/fairlife-logo.png"
             width={300}
             height={110}
+            quality={100}
             alt="Fair Life logo"
-            className="mx-auto"
+            className="mx-auto w-[180px] md:w-[300px]"
           />
         </div>
         <p className="text-center text-xs">
@@ -28,25 +29,29 @@ export default function Footer() {
           registru ČNB pod IČO: 1067420 a zároveň registrovaný pod samostatným zprostředkovatelem
           spotřebitelských úvěrů Broker Trust, a.s. IČO: 26439719
         </p>
-        <div className="my-8 flex flex-row items-center gap-8 text-base">
-          <Link href="http://www.fair-life.cz/" target="_blank" className="whitespace-nowrap">
+        <div className="my-6 flex flex-col items-center gap-6 text-base sm:flex-row sm:gap-8 md:my-8">
+          <Link href="https://www.fair-life.cz/" target="_blank" className="whitespace-nowrap">
             o Fair Life
           </Link>
-          <Link href="/" className="whitespace-nowrap">
-            ochrana osobních údajů
+          <Link
+            href="https://www.brokertrust.cz/zasady-ochrany-soukromi/"
+            target="_blank"
+            className="whitespace-nowrap"
+          >
+            zásady ochrany soukromí
           </Link>
-          <Link href="/" className="whitespace-nowrap">
-            cookies
-          </Link>
-          <hr className="mt-auto w-full border-t-2 pb-3" />
+          <hr className="mt-auto hidden w-full border-t-2 pb-3 sm:block" />
           <Link
             href="https://www.linkedin.com/in/mat%C4%9Bj-%C5%A1ime%C4%8Dek-71aba6215"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <LinkedInIcon style={{ color: "rgb(var(--primary-dark))" }} />
           </Link>
         </div>
-        <p className="pb-8 text-center text-sm">Fair Life © 2023. Všechna práva vyhrazena.</p>
+        <p className="mb-6 text-center text-sm md:pb-8">
+          Fair Life © 2023. Všechna práva vyhrazena.
+        </p>
       </Container>
     </footer>
   );

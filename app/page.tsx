@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 import ContactSection from "@/components/pages/ContactSection";
 import HeroSection from "@/components/pages/HeroSection";
-import IconSection from "@/components/pages/IconSection";
+import ServicesSection from "@/components/pages/ServicesSection";
 import InfoSection from "@/components/pages/InfoSection";
 import ReferenceSection from "@/components/pages/ReferenceSection";
 
@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center">
       <HeroSection />
-      <IconSection />
+      <ServicesSection />
       <InfoSection />
       <ReferenceSection />
       <ContactSection />

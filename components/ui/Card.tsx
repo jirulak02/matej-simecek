@@ -1,11 +1,13 @@
 export default function Card({
   children,
-  className,
+  className = "",
 }: {
   children: React.ReactNode;
   className?: string;
 }) {
   return (
-    <div className={`rounded-sm bg-white p-5 shadow-md drop-shadow ${className}`}>{children}</div>
+    <div className={`rounded-sm bg-white p-3 shadow-md drop-shadow md:p-5 ${className}`}>
+      {children}
+    </div>
   );
 }

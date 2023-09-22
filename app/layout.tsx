@@ -1,5 +1,6 @@
-import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
+import type { Metadata } from "next";
+import Link from "next/link";
 
 import "./globals.css";
 import Header from "@/components/layout/Header";
@@ -19,6 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         {children}
         <Footer />
+        <Link href="https://www.jiri-simecek.com/" target="_blank" className="h-0 w-0" />
       </body>
     </html>
   );
