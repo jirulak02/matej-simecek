@@ -67,8 +67,11 @@ export default function IconSection() {
               />
               <h3 className="text-primary-dark font-semibold">Úvěry a půjčky</h3>
               <p>
-                Často není obtížné získat úvěr, <strong>větší výzvou je konsolidace úvěrů</strong>
-                <strong>za účelem zlepšení cash flow či bonity klienta</strong>.
+                Často není obtížné získat úvěr,{" "}
+                <strong>
+                  větší výzvou je konsolidace úvěrů za účelem zlepšení cash flow či bonity klienta
+                </strong>
+                .
               </p>
             </div>
             <div className="border-primary-light m-2 flex flex-col space-y-1 rounded-3xl border p-6 shadow-md md:m-3 md:space-y-3 md:p-8">
