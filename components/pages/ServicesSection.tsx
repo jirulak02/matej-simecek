@@ -23,7 +23,7 @@ export default function IconSection() {
               <h3 className="text-primary-dark font-semibold">Investice</h3>
               <p>
                 Vhodným mixem investičních a spořících produktů vytvoříme{" "}
-                <strong>strategii k dosažení vytyčených cílů</strong>.
+                <strong>strategii k dosažení vytyčených cílů.</strong>
               </p>
             </div>
             <div className="border-primary-light m-2 flex flex-col space-y-1 rounded-3xl border p-6 shadow-md md:m-3 md:space-y-3 md:p-8">
@@ -69,9 +69,8 @@ export default function IconSection() {
               <p>
                 Často není obtížné získat úvěr,{" "}
                 <strong>
-                  větší výzvou je konsolidace úvěrů za účelem zlepšení cash flow či bonity klienta
+                  větší výzvou je konsolidace úvěrů za účelem zlepšení cash flow či bonity klienta.
                 </strong>
-                .
               </p>
             </div>
             <div className="border-primary-light m-2 flex flex-col space-y-1 rounded-3xl border p-6 shadow-md md:m-3 md:space-y-3 md:p-8">
@@ -86,7 +85,7 @@ export default function IconSection() {
               <h3 className="text-primary-dark font-semibold">Péče o sportovce</h3>
               <p>
                 Plný potenciál služeb pro profesionální sportovce{" "}
-                <strong>od zabezpečení po správu portfolia a budování renty</strong>.
+                <strong>od zabezpečení po správu portfolia a budování renty.</strong>
               </p>
             </div>
             <div className="border-primary-light m-2 flex flex-col space-y-1 rounded-3xl border p-6 shadow-md md:m-3 md:space-y-3 md:p-8">
@@ -101,7 +100,7 @@ export default function IconSection() {
               <h3 className="text-primary-dark font-semibold">Firemní finance</h3>
               <p>
                 Finanční produkty, které pomáhají zaměstnavatelům{" "}
-                <strong>ocenit a udržet si své klíčové zaměstnance</strong>.
+                <strong>ocenit a udržet si své klíčové zaměstnance.</strong>
               </p>
             </div>
           </div>
