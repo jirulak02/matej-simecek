@@ -19,11 +19,15 @@ export default function ContactSection() {
           <div className="flex basis-1/3 flex-col justify-center gap-2 font-light text-white">
             <div>
               <PhoneEnabledIcon />
-              <span className="ml-4">+420 773 697 212</span>
+              <a href="tel:+420773697212" target="_blank" className="ml-4">
+                +420 773 697 212
+              </a>
             </div>
             <div>
               <EmailIcon />
-              <span className="ml-4">m.simecek@fair-life.cz</span>
+              <a href="mailto:m.simecek@fair-life.cz" target="_blank" className="ml-4">
+                m.simecek@fair-life.cz
+              </a>
             </div>
             <h4 className="mt-6 font-medium text-white">Sídlo</h4>
             <div>
