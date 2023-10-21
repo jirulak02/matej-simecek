@@ -1,4 +1,4 @@
-# Matej-simecek - 2023
+# matej-simecek - 2023
 
 This is a business website for a client.
 
