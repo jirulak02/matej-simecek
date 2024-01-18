@@ -50,7 +50,7 @@ export default function Footer() {
           </Link>
         </div>
         <p className="mb-6 text-center text-sm md:pb-8">
-          Fair Life © 2023. Všechna práva vyhrazena.
+          Fair Life © 2023-{new Date().getFullYear()}. Všechna práva vyhrazena.
         </p>
       </Container>
     </footer>
