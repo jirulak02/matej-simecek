@@ -28,7 +28,7 @@ export default function ContactForm({ className }: { className?: string }) {
         toast.success("Zpráva byla úspěšně odeslána.");
       }}
       onError={() => {
-        toast.error("Zprávu se nepodařilo odeslat.");
+        toast.error("Něco se pokazilo. Dejte mi prosím vědět, že formulář nefunguje.");
       }}
       className={`flex w-full flex-col gap-4 ${className}`}
     >
@@ -87,7 +87,7 @@ export default function ContactForm({ className }: { className?: string }) {
             className: "text-lg font-medium border-2 border-green-500",
           },
           error: {
-            duration: 3000,
+            duration: 8000,
             position: "bottom-center",
             className: "text-lg font-medium border-2 border-red-500",
           },
