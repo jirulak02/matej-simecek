@@ -27,7 +27,7 @@ export default function Footer() {
           <Link
             href="https://www.brokertrust.cz/proklienty"
             target="_blank"
-            className="whitespace-nowrap text-xs hover:underline"
+            className="whitespace-nowrap text-xs"
           >
             https://www.brokertrust.cz/proklienty
           </Link>

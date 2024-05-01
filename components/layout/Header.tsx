@@ -19,13 +19,13 @@ export default function Header() {
             alt="Fair Life lion head logo"
           />
           <div className="whitespace-nowrap">
-            Matěj <span className="text-primary-light font-bold">ŠIMEČEK</span>
+            Matěj <span className="font-bold text-primary-light">ŠIMEČEK</span>
           </div>
         </Link>
         <hr className="mt-auto w-full border-t-2 pb-8" />
         <div>
           <Link
-            href="https://www.linkedin.com/in/mat%C4%9Bj-%C5%A1ime%C4%8Dek-71aba6215"
+            href="https://www.linkedin.com/in/mat%C4%9Bj-%C5%A1ime%C4%8Dek"
             target="_blank"
             rel="noopener noreferrer"
           >
