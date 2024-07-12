@@ -1,7 +1,7 @@
 "use client";
 
 import { Form, useForm } from "react-hook-form";
-import { toast, Toaster } from "react-hot-toast";
+import { Toaster, toast } from "react-hot-toast";
 
 import { StyledButtonSecondary, StyledInput } from "./ui/Styles";
 

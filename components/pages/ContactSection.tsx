@@ -1,10 +1,9 @@
-import PhoneEnabledIcon from "@mui/icons-material/PhoneEnabled";
-import EmailIcon from "@mui/icons-material/Email";
-
 import ContactForm from "../ContactForm";
 import Container from "../layout/Container";
 import Section from "../layout/Section";
 import Gradient from "../ui/Gradient";
+import EmailIcon from "@mui/icons-material/Email";
+import PhoneEnabledIcon from "@mui/icons-material/PhoneEnabled";
 
 export default function ContactSection() {
   return (

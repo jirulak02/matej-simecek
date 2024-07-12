@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 import Container from "./Container";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 export default function Header() {
   return (
