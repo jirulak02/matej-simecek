@@ -15,7 +15,7 @@ export default function ReferenceSection() {
               <Image
                 src="/karnik.png"
                 quality={100}
-                className="rounded-sm"
+                className="rounded-xs"
                 width={200}
                 height={200}
                 alt="Jan Kárník in a shirt with see behind him"
@@ -45,7 +45,7 @@ export default function ReferenceSection() {
               <Image
                 src="/avatar.png"
                 quality={100}
-                className="rounded-sm"
+                className="rounded-xs"
                 width={200}
                 height={200}
                 alt="Profile avatar placeholder"

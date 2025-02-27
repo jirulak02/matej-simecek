@@ -13,7 +13,7 @@ export default function InfoSection() {
               src="/about.png"
               fill
               quality={100}
-              className="rounded-sm object-cover shadow-md"
+              className="rounded-xs object-cover shadow-md"
               alt="A group of people working in a busy office with Mr. Šimeček in the middle"
             />
           </div>
@@ -42,7 +42,7 @@ export default function InfoSection() {
               src="/work.png"
               fill
               quality={100}
-              className="rounded-sm object-cover shadow-md"
+              className="rounded-xs object-cover shadow-md"
               alt="Mr. Šimeček in a suit talking to a client on the phone"
             />
           </div>
