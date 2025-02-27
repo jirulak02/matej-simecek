@@ -2,6 +2,6 @@
 
 This is a business website for a client.
 
-You can find it at https://www.matejsimecek.cz/.
+You can find it at [https://www.matejsimecek.cz/](https://www.matejsimecek.cz/).
 
 Jiří Šimeček

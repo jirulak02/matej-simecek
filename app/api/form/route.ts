@@ -25,6 +25,7 @@ export async function POST(req: Request) {
       status: 200,
     });
   } catch (e) {
+    void e;
     return new Response("Error", {
       status: 500,
     });
