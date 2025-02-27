@@ -6,7 +6,7 @@ export default function Card({
   className?: string;
 }) {
   return (
-    <div className={`rounded-sm bg-white p-3 shadow-md drop-shadow md:p-5 ${className}`}>
+    <div className={`rounded-xs bg-white p-3 shadow-md drop-shadow-sm md:p-5 ${className}`}>
       {children}
     </div>
   );
